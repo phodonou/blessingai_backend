@@ -27,7 +27,7 @@ debugpy==1.6.7
 decorator==5.1.1
 defusedxml==0.7.1
 dnspython==2.3.0
-eventlet==0.33.2
+eventlet==0.33.3
 executing==1.2.0
 fastjsonschema==2.16.3
 fastparquet==2023.4.0
