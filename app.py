@@ -14,7 +14,7 @@ EMBEDDING_MODEL = "text-embedding-ada-002"
 GPT_MODEL = "gpt-3.5-turbo"
 
 app = Flask(__name__)
-socketio = SocketIO(app, cors_allowed_origins="*",  async_mode="eventlet" )
+socketio = SocketIO(app, cors_allowed_origins="*" )
 
 @socketio.on('query')
 def query(data):
@@ -98,4 +98,4 @@ def ask(df, query, updatestep, n=3):
 
 
 if __name__ == '__main__':
-    socketio.run(app, host='0.0.0.0', port=5000, keyfile='server.key', certfile='server.cert')
+    socketio.run(app, host='0.0.0.0', port=5000)
